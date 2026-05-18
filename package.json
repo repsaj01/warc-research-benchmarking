@@ -1,0 +1,24 @@
+{
+  "name": "warc-benchmark",
+  "version": "0.1.0",
+  "description": "Benchmark suite comparing streaming, in-memory, and worker-based WARC parsing strategies in Node.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "catalog": "tsx src/catalog-files.ts",
+    "benchmark": "tsx src/benchmark.ts",
+    "analyze": "tsx src/analysis/analyze.ts"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "dependencies": {
+    "warcio": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
